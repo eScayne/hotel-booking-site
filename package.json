@@ -1,0 +1,25 @@
+{
+  "name": "hotel_form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./app/src/main.css -o ./app/static/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./app/src/main.css -o ./app/static/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cent-ivan/hotel-booking-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cent-ivan/hotel-booking-site/issues"
+  },
+  "homepage": "https://github.com/cent-ivan/hotel-booking-site#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
