@@ -71,7 +71,7 @@ window.addEventListener('scroll', function () {
       alert("Please select a time.");
       return;
   }
-  document.getElementById(activeField).value = `${selectedDate} ${time}`;
+  document.getElementById("activeField").value = `${selectedDate} ${time}`;
   document.getElementById("timePickerModal").classList.add("hidden");
   });
 

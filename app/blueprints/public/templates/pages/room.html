@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rooms - Hotel & Resort</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../../static/css/style.css">
     <style>
@@ -42,11 +42,12 @@
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <a href="#" class="text-2xl font-['Pacifico'] text-white">Leave</a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="../landing_page.html" class="text-white hover:text-gray-300 transition-colors">Home</a>
-                    <a href="#room" class="text-white hover:text-gray-300 transition-colors">Rooms</a>
-                    <a href="../../templates/pages/about.html" class="text-white hover:text-gray-300 transition-colors">About</a>
-                    <a href="../../templates/pages/contact.html" class="text-white hover:text-gray-300 transition-colors">Contact</a>
-                    <a href="../../auth/templates/signin.html" class="bg-secondary text-white px-5 py-2 rounded hover:bg-primary hover:text-gray-300 transition-colors whitespace-nowrap">Sign In</a>
+                <a href="{{url_for('public.index') }}" class="text-white hover:text-gray-300 transition-colors">Home</a>
+                <a href="#room" class="text-white underline hover:text-gray-300 transition-colors">Rooms</a>
+                <a href="{{url_for('public.about') }}" class="text-white hover:text-gray-300 transition-colors">About</a>
+                <a href="{{url_for('public.contact') }}" class="text-white hover:text-gray-300 transition-colors">Contact</a>
+            
+
                 </div>
             </div>
         </nav>
@@ -115,7 +116,7 @@
                             <option value="4">4 Guests</option>
                         </select>
                     </div>
-                    <button type="submit" class="w-full bg-primary text-white py-3 rounded hover:bg-emerald-800 transition-colors">
+                    <button type="submit" class="w-full bg-[#166534] text-white py-3 rounded hover:bg-emerald-800 transition-colors">
                         Book Now
                     </button>
                 </form>
