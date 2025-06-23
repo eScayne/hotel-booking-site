@@ -5,16 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leave - Hotel & Resort</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" /> 
     <!-- RemixIcon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Flatpickr CSS & JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <!--css nag babug ung style sa home nav boss
-    <link rel="stylesheet" href="../../../static/css/style.css"> -->
+    <!--css nag babug ung style sa home nav boss-->
+    <link rel="stylesheet" href="../../../static/css/style.css"> 
   <style>
     html {
       scroll-behavior: smooth;
@@ -68,11 +68,10 @@
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#" class="text-2xl font-['Pacifico'] text-white">Leave</a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#home" class="text-white hover:text-gray-300 transition-colors">Home</a>
-          <a href="../../../blueprints/public/templates/pages/room.html" class="text-white hover:text-gray-300 transition-colors">Rooms</a>
-          <a href="../../../blueprints/public/templates/pages/about.html" class="text-white hover:text-gray-300 transition-colors">About</a>
-          <a href="../../../blueprints/public/templates/pages/contact.html" class="text-white hover:text-gray-300 transition-colors">Contact</a>
-          <a href="../../auth/templates/signin.html" class="bg-secondary text-white px-5 py-2 rounded hover:bg-primary hover:text-gray-300 transition-colors whitespace-nowrap">Sign In</a>
+          <a href="#home" class="text-white underline hover:text-gray-300 transition-colors">Home</a>
+          <a href="{{url_for('public.rooms') }}" class="text-white hover:text-gray-300 transition-colors">Rooms</a>
+          <a href="{{url_for('public.about') }}" class="text-white hover:text-gray-300 transition-colors">About</a>
+          <a href="{{url_for('public.contact') }}" class="text-white hover:text-gray-300 transition-colors">Contact</a>
 
         <!-- Dropdown for My Account (hide this when user is not sign in and show if user is signed in)
           <li class="nav-item relative list-none">
@@ -148,7 +147,7 @@
     </section>
   
     <!-- Time Picker Modal  Flatpck-->
-    <div id="timePickerModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div id="timePickerModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white p-6 rounded-lg text-center">
         <h3 class="text-lg font-bold mb-4" id="modalTitle">Select Time</h3>
         <input type="time" id="modalTime" class="w-full border border-gray-300 rounded p-2 mb-4" required />
@@ -160,7 +159,7 @@
     </div>
 
     <!-- Modal for Check Availability -->
-    <div id="availabilityModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-[9999] p-2">
+    <div id="availabilityModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999] p-2">
         <div class="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg w-full max-w-[95%] sm:max-w-2xl md:max-w-4xl relative overflow-y-auto max-h-[90vh]">
             <!-- Close Button -->
             <button id="closeModal" class="absolute top-4 right-4 text-white px-4 py-1 bg-red-500 rounded hover:bg-red-700 hover:text-white transition-colors">
@@ -358,7 +357,7 @@
             <i class="ri-double-quotes-l ri-2x"></i>
             </div>
             <p class="text-gray-600 mb-6">
-            First time ko at babalik ulit yot
+            First time ko at babalik ulit magiyot
             </p>
             <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
